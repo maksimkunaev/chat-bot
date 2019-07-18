@@ -1,72 +1,29 @@
-// const formatData = dialogs => {
-//   const train_data = dialogs.reduce(
-//     (acc, { sender_class, text, ...rest }, i) => {
-//       const lastElem = acc[acc.length - 1];
-//
-//       if (!lastElem) {
-//         return [...acc, { sender_class, text, ...rest}];
-//       }
-//
-//       if (Object(lastElem).sender_class === sender_class) {
-//         acc[acc.length - 1].text = acc[acc.length - 1].text + ". " + text;
-//         return acc;
-//       }
-//       return [...acc, { sender_class, text, ...rest }];
-//     },
-//     []
-//   );
-//
-//   return train_data;
-// }
+const dataPath = '../data/papaya.txt';
+const path = require('path');
 
-const formatData = dialogs => {
-  let train_data = dialogs.reduce(
-    (acc, { sender_class, text, ...rest }, i) => {
-      const lastElem = acc[acc.length - 1];
 
-      if (!lastElem) {
-        return [...acc, { sender_class, text, ...rest}];
-      }
+function formatData(data) {
+  let trainig_data = [];
 
-      if (Object(lastElem).sender_class === sender_class) {
-        acc[acc.length - 1].text = acc[acc.length - 1].text + ". " + text;
-        return acc;
-      }
-      return [...acc, { sender_class, text, ...rest }];
-    },
-    []
-  );
+  const arrayData = data.match(/(Q|A):\ (.*)/g).forEach(s => {
+    const [type, text] = s.split(': ');
 
-  if (train_data.length % 2) {
-    train_data.pop();
-  }
-
-  let newTrain_data = [];
-
-  for (let i=1;i<=train_data.length;i++) {
-    const text = train_data[i - 1].text;
-
-    if (i % 2) {
-      newTrain_data.push({
-        input: text,
+    const newText = text.replace(/_\w+/, ':)');
+    if (type === 'Q') {
+      trainig_data.push({
+        input: newText,
       })
-    } else {
-      newTrain_data[newTrain_data.length - 1].output = text;
     }
-  }
 
-  return newTrain_data;
+    if (type === 'A') {
+      trainig_data[trainig_data.length - 1].output = newText;
+    }
+
+  });
+  return trainig_data;
+
 }
 
-const getData = data => {
-  let training_data = [];
-  data.map(item => {
+// const trainData = formatData(data);
 
-    const dialogsSet = formatData(item.dialog);
-    training_data = training_data.concat(dialogsSet);
-  })
-
-  return training_data;
-}
-
-module.exports = getData;
+module.exports = formatData;

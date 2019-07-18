@@ -1,16 +1,19 @@
-const brain      = require('brain.js')
-const serializer = require('../src/serialize');
+const brain      = require('brain.js');
+const config = require('./config');
+const settings = config.settings;
 
 const lstm = new brain.recurrent.LSTM();
 
-lstm.fromJSON(require('../nets/papaya2.json'));
+lstm.fromJSON(require(settings.netPath));
 
-const inputData = "Are you under the impression that Ebola was unknown before the most recent outbreak ? It is a reasonably well known about infection ."
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
 
-const output = lstm.run(serializer.encode(inputData));
+readline.question(`Type your question: `, (question) => {
+	const output = lstm.run(question);
 
-let answer = output.split('0.').slice(1).map(num => Number(`0.${num}`))
-
-// console.log(` answer`, answer);
-answer = serializer.decode(answer)
-console.log(`answer`, answer);
+	console.log(`Answer: ${output}!`)
+	readline.close()
+})
