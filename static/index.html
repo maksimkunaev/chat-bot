@@ -10,8 +10,21 @@
 <script>
   var socket = io();
   console.log(socket)
+
+  socket.on('init', function(msg){
+    console.log(msg);
+  });
+
+  socket.on('connection', function(socket){
+    
+});
 </script>
 <body>
-  	hello
+   	<button onclick="train()">train</button>
 </body>
+<script type="text/javascript">
+	function train() {
+		socket.emit('train', {});
+	}
+</script>
 </html>
