@@ -5,8 +5,19 @@ const fs = require('fs');
 const path = require('path');
 const { createSVG, createDefaulTable, getError, saveNet } = utils;
 const defaultPath  = path.join(__dirname, "../nets/")
+const data = require('../data/total.json');
+const netsPath  = path.join(__dirname, "../nets/");
 
-function train({trainingData, netPath, netConfig, training, name}) {
+function train(settings) {
+	const { from, to, name } = settings.config;
+
+	const config = {
+		trainingData: data.slice(from, to),
+		netPath: path.join(netsPath, `${name}.json`),
+		netConfig: settings.net,
+		training: settings.training,
+	}
+	const { trainingData, netConfig, netPath, training } = config;
 	const net = new brain.recurrent.LSTM(netConfig);
 	const errors = [];
 	const trainingConfig = {
@@ -21,13 +32,21 @@ function train({trainingData, netPath, netConfig, training, name}) {
 	const svg = createSVG(errors);
 	const defaultTable = createDefaulTable(trainingData, net)
 
+	const savingSettings = {
+		trainingData: trainingData.length,
+		name,
+		...settings.net,
+		...settings.training,
+	}
+	
 	const saveingConfig = {
 		name,
 		net,
 		netPath,
 		svg,
 		defaultTable,
-		defaultPath
+		defaultPath,
+		savingSettings,
 	}
 	saveNet(saveingConfig) 
 }

@@ -30,8 +30,8 @@ function decodeAnswer(output, decodeFunction) {
 }
 
 function createSVG(data) {
-	const width = 190;
-	const height = 160;
+	const width = 150;
+	const height = 40;
 	const step = width / data.length;
 	const max = Math.max(...data);
 
@@ -42,8 +42,8 @@ function createSVG(data) {
 		path += `L ${step * i} ${y}`;
 	})
 
-	return `<svg width="190" height="160" xmlns="http://www.w3.org/2000/svg" style="outline: 1px solid" >
-			<path d="M 0 0 ${path}" stroke="black" fill="transparent"/>
+	return `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg" style="outline: 1px solid #ccc" >
+			<path d="M 0 0 ${path}" stroke-width="2px" stroke="#63e72c" fill="transparent"/>
 		</svg>`;
 }
 
@@ -61,6 +61,7 @@ function saveNet(config) {
 		svg,
 		defaultTable,
 		defaultPath,
+		savingSettings
 	} = config;
 
 	const dirPath = path.join(defaultPath, `${name}`)
@@ -72,9 +73,11 @@ function saveNet(config) {
 		svg,
 		defaultTable,
 	}
+
 	saveStrem(dirPath, name + '.net.json', JSON.stringify(net.toJSON(),null,2))
 	saveStrem(dirPath, name + '.image.svg', svg)
 	saveStrem(dirPath, name + '.table.json', JSON.stringify(defaultTable))
+	saveStrem(dirPath, name + '.settings.json', JSON.stringify(savingSettings))
 }	
 
 function saveStrem(dirPath, name, content) {
