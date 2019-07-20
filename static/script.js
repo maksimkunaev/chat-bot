@@ -14,7 +14,9 @@
     const netWrap = document.querySelector('.nets');
     let netList = document.createElement('ul');
     netList.classList = 'list';
-   
+    const navList = document.querySelector('.navigation ul');
+    navList.addEventListener('click', onMenuClick)
+
     netWrap.innerHTML = null;
     data.forEach((item, index)  => {
         const li = document.createElement('li');
@@ -94,10 +96,33 @@ function createtable(data) {
 const defaultData = {
   settings: [{name: 'iterations', value: 1000},{name: 'errorTrash', value: 0.011}]
 }
+function onMenuClick(event) {
+  const elemClicked = event.target.closest('li');
+  const navList = event.target.closest('ul')
+ 
+  if (!elemClicked || !navList) return;
+
+  for (var i = 0; i < navList.children.length; i++) {
+    const elem = navList.children[i];
+    const idFor = elem.getAttribute("data-id-for");
+
+    if (elem === elemClicked) {
+      elem.classList.add('active');
+      console.log(`idFor active`,idFor)
+      const wrapper = document.querySelector(idFor);
+      wrapper.style.opacity = 1;
+
+    } else {
+      elem.classList.remove('active');
+      const wrapper = document.querySelector(idFor);
+      wrapper.style.opacity = 0;
+      console.log(`idFor disable`,idFor)
+
+    }
+  }
+}
 
 function createConfig(data) {
-
-
   const config = document.querySelector('.list-group.config');
   let settings = JSON.parse(data.settings) || [];
   const svgData = data.svg;

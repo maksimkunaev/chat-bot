@@ -1,94 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <style>
-    body {
-        /*background: #000000ed;*/
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            /*background: #000000ed;*/
+        }
+        
+        .wrap {
+            margin: 30px 0;
+        }
+        
+        .custom-table {
+            max-height: 70vh;
+            overflow: scroll;
+        }
+        
+        .table td,
+        .table th {
+            color: #fff;
+        }
+        
+        .nets {
+            max-width: 300px;
+            cursor: pointer;
+        }
+        
+        .list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .net {
+            display: flex;
+        }
+        
+        .svg {
+            width: 100px;
+            height: 50px;
+            padding: 0;
+            margin: 0 5px;
+            padding-top: 1px;
+        }
+        
+        .setting {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ;
+        }
+        
+        .setting__value {
+            padding-left: 40px;
+        }
+        
+        .navigation {
+            margin: 5px 0;
+            cursor: pointer;
+        }
 
-    .wrap {
-      margin: 30px 0;
-    }
-    .custom-table {
-      max-height: 70vh;
-      overflow: scroll;
-    }
+        .run-wrapper, .train-wrapper {
+            position: absolute;
+            transition: opacity 50ms ease 0s;
+        }
 
-    .table td, .table th {
-      color: #fff; 
-    }
-    .nets {
-      max-width: 300px;
-      cursor: pointer;
-    }
-
-    .list {
-      list-style: none;
-    }
-
-    .net {
-      display: flex;
-    }
-    .svg {
-      width: 100px;
-      height: 50px;
-      padding: 0;
-      margin: 0 5px;
-      padding-top: 1px;
-    }
-
-    .setting {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;;
-    }
-
-    .setting__value {
-      padding-left: 40px;
-    }
-  </style>
+        .train-wrapper {
+            opacity: 0
+        }
+    </style>
 </head>
 <script src="/socket.io/socket.io.js"></script>
 
 <body>
-  <div class="container-fluid">
-   <div class='wrap'>
-      <div class="row">
-        <div class="col-2">
-            <nav class='nets'>
-              <ul class="list-group"></ul>
-            </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 navigation">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item nav-link active" data-id-for=".run-wrapper">
+                        Run
+                    </li>
+                    <li class="nav-item nav-link" data-id-for=".train-wrapper">
+                        Train
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-10">
-          <div class="row">
-           <div class="col-6">
-              <div class="row">
-                <ul class="list-group config"></ul>
-                <div class="alert alert-light svg" role="alert"></div>
-              </div>
-               <div class="row">
-                <!-- chat -->
-              </div>
-           </div>
-           <div class="col-6">
-           <div class="table table-dark custom-table"></div>
-             
-           </div>
-         </div>
+
+        <div class="row run-wrapper">
+            <div class="col-2">
+                <nav class='nets'>
+                    <ul class="list-group"></ul>
+                </nav>
+            </div>
+
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <ul class="list-group config"></ul>
+                            <div class="alert alert-light svg" role="alert"></div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="table table-dark custom-table"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-  
-    <button onclick="train()" type="button" class="btn btn-primary">train</button>
-
-  </div>
-</div>
- 
+        <div class="row train-wrapper">
+            <div class="col-2">
+                <button onclick="train()" type="button" class="btn btn-primary">train</button>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
+
 </html>
