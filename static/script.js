@@ -6,17 +6,43 @@
 
   socket.emit('init');
 
-  function train() {
-    socket.emit('train', {});
+  function train(e) {
+    const trainForm = document.querySelector('.train-form');
+    const name = document.querySelector('#exampleInputName').value;
+    const layers = document.querySelector('#exampleInputLayers').value;
+    const iterations = document.querySelector('#exampleInputIterations').value;
+    const data = document.querySelector('#exampleInputData').value;
+
+    const settings = {
+        config: {
+        name,
+          from: 0,
+          to: Number(data),
+        },
+        net: {
+          "hiddenLayers": layers.split(',').map(layers => Number(layers)),
+        },
+        training: {
+        iterations: Number(iterations),
+        erroThresh: 0.011,
+      }
+    }
+
+    socket.emit('train', settings)
   }
 
   function init(data) {
     const netWrap = document.querySelector('.nets');
+    const trainForm = document.querySelector('.train-form');
+    const trainSubmit = document.querySelector('.train-submit');
     let netList = document.createElement('ul');
     netList.classList = 'list';
     const navList = document.querySelector('.navigation ul');
     navList.addEventListener('click', onMenuClick)
+    trainForm.addEventListener('sumbit', train)
+    trainSubmit.addEventListener('click', train)
 
+    console.log(`trainForm`,trainForm)
     netWrap.innerHTML = null;
     data.forEach((item, index)  => {
         const li = document.createElement('li');
@@ -44,7 +70,6 @@
 
 function createtable(data) {
     const tableNode = document.querySelector('.table');
-
 
     const newData = JSON.parse(data);
     let tableData = ``;
@@ -108,16 +133,15 @@ function onMenuClick(event) {
 
     if (elem === elemClicked) {
       elem.classList.add('active');
-      console.log(`idFor active`,idFor)
       const wrapper = document.querySelector(idFor);
       wrapper.style.opacity = 1;
+      wrapper.style.pointerEvents = 'visible';
 
     } else {
       elem.classList.remove('active');
       const wrapper = document.querySelector(idFor);
       wrapper.style.opacity = 0;
-      console.log(`idFor disable`,idFor)
-
+      wrapper.style.pointerEvents = 'none';
     }
   }
 }
@@ -128,7 +152,6 @@ function createConfig(data) {
   const svgData = data.svg;
 
   console.log(`settings`, settings);
-
 
   config.innerHTML = '';
 

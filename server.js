@@ -47,22 +47,22 @@ function startWs() {
 			})
 		})
 
-	    socket.on('train', () => {
+	    socket.on('train', settings => {
 	    	console.log(`train`)
-	    	const settings = {
-	    		config: {
-					name: 'robot_borya_5',
-		    		from: 20,
-		    		to: 40,
-	    		},
-	    		net: {
-	    			"hiddenLayers": [50, 50, 50],
-	    		},
-	    		training: {
-					iterations: 500,
-					erroThresh: 0.011,
-				}
-	    	}
+	   //  	const settings = {
+	   //  		config: {
+				// 	name: 'robot_borya_5',
+		  //   		from: 20,
+		  //   		to: 40,
+	   //  		},
+	   //  		net: {
+	   //  			"hiddenLayers": [50, 50, 50],
+	   //  		},
+	   //  		training: {
+				// 	iterations: 500,
+				// 	erroThresh: 0.011,
+				// }
+	   //  	}
 
 	    	neural.train(settings)
 	    });

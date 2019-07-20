@@ -63,12 +63,14 @@
             margin: 5px 0;
             cursor: pointer;
         }
-
-        .run-wrapper, .train-wrapper {
+        
+        .run-wrapper,
+        .train-wrapper {
             position: absolute;
             transition: opacity 50ms ease 0s;
+            width: 100%;
         }
-
+        
         .train-wrapper {
             opacity: 0
         }
@@ -88,6 +90,32 @@
                         Train
                     </li>
                 </ul>
+            </div>
+        </div>
+
+        <div class="row train-wrapper">
+            <div class="col-5">
+                <form class="train-form">
+                    <div class="form-group">
+                        <label for="exampleInputName">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputIterations">Iterations</label>
+                        <input type="number" class="form-control" id="exampleInputIterations" placeholder="Iterations">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputLayers">Hidden layers</label>
+                        <input type="text" class="form-control" id="exampleInputLayers" placeholder="Hidden layers">
+                    </div>
+
+                   <div class="form-group">
+                        <label for="exampleInputData">Data</label>
+                        <input type="number" class="form-control" id="exampleInputData" placeholder="Data">
+                    </div>
+                    <button type="submit" class="btn btn-primary train-submit">Train</button>
+                </form>
             </div>
         </div>
 
@@ -113,11 +141,7 @@
             </div>
         </div>
 
-        <div class="row train-wrapper">
-            <div class="col-2">
-                <button onclick="train()" type="button" class="btn btn-primary">train</button>
-            </div>
-        </div>
+     
     </div>
 </body>
 <script src="script.js"></script>
