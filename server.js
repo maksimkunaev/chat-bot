@@ -51,15 +51,15 @@ function startWs() {
 	    	console.log(`train`)
 	    	const settings = {
 	    		config: {
-					name: 'robot_vasya_2',
-		    		from: 0,
-		    		to: 30,
+					name: 'robot_borya_5',
+		    		from: 20,
+		    		to: 40,
 	    		},
 	    		net: {
-	    			"hiddenLayers": [51, 51],
+	    			"hiddenLayers": [50, 50, 50],
 	    		},
 	    		training: {
-					iterations: 400,
+					iterations: 500,
 					erroThresh: 0.011,
 				}
 	    	}
