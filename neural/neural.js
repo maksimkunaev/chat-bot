@@ -3,7 +3,7 @@ const serializer = require('../utils/serialize');
 const utils = require('../utils/index');
 const fs = require('fs');
 const path = require('path');
-const { createSVG, createDefaulTable, getError, saveNet } = utils;
+const { createSVG, createDefaulTable, getError, saveNet, decodeAnswer } = utils;
 const defaultPath  = path.join(__dirname, "../nets/")
 const data = require('../data/total.json');
 const netsPath  = path.join(__dirname, "../nets/");
@@ -24,10 +24,14 @@ function train(settings) {
 		...training,
 		log: details => {
 			console.log(details);
-			errors.push(getError(details))},
+			errors.push(getError(details))
+		},
+		logPeriod: 1,    
 	}
-
+	console.log(`trainingConfig`, trainingConfig)
+	const startTime = Date.now();
 	net.train(serializer.encodeData(trainingData), trainingConfig);
+	const trainTime = (Date.now() - startTime) / 1000;
 
 	const svg = createSVG(errors);
 	const defaultTable = createDefaulTable(trainingData, net)
@@ -37,6 +41,8 @@ function train(settings) {
 		name,
 		...settings.net,
 		...settings.training,
+		trainTime,
+		iterations: errors.length,
 	}
 	
 	const saveingConfig = {
@@ -51,8 +57,18 @@ function train(settings) {
 	saveNet(saveingConfig) 
 }
 
-function run({trainingData, netPath, netConfig}) {
+function run(message, net) {
+	console.log(`message`, message)
+	console.log(`netPath`, net)
+	const lstm = new brain.recurrent.LSTM();
+	lstm.fromJSON(require(net.netPath));
 
+	const encodedQuestion = serializer.encode(message)
+	const output = lstm.run(encodedQuestion);
+
+	const answer = decodeAnswer(output, serializer.decode);
+	console.log(`Answer: ${answer}!`)
+	return answer;
 }
 
 module.exports = {

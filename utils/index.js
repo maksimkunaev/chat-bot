@@ -51,8 +51,15 @@ function createSVG(data) {
 		path += `L ${stepX * i} ${y}`;
 	})
 
+	const lastPoint = data[data.length - 1];
+	const y = height - (stepY * lastPoint);
+
 	return `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg" style="outline: 1px solid #ccc" >
+			<style>
+				.text { font: italic 10px sans-serif; fill: #756f6f; }
+			</style>
 			<path d="M 0 0 ${path}" stroke-width="2px" stroke="#63e72c" fill="transparent"/>
+			<text x="80%" y="${y * 0.8}" class="text">${lastPoint.toFixed(3)}</text>
 		</svg>`;
 }
 
@@ -99,5 +106,6 @@ module.exports = {
 	createSVG,
 	createDefaulTable,
 	getError,
-	saveNet
+	saveNet,
+	decodeAnswer,
 };

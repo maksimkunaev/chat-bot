@@ -8,25 +8,6 @@ const lstm = new brain.recurrent.LSTM();
 
 lstm.fromJSON(require(settings.netPath));
 
-const readline = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-})
-
-const resultTable = trainingData.map(item => {
-	const { input, output } = item;
-
-	const encodedQuestion = serializer.encode(input)
-	const result = lstm.run(encodedQuestion);
-
-	const answer = decodeAnswer(result, serializer.decode);
-
-	return {
-		input,
-		output: answer,
-	}
-})
-
 console.table(resultTable)
 
 readline.question(`Type your question: `, (question) => {

@@ -52,7 +52,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            ;
         }
         
         .setting__value {
@@ -73,6 +72,16 @@
         
         .train-wrapper {
             opacity: 0
+        }
+
+        .chat {
+            margin-top: 10px;
+        }
+
+        .dialog {
+            height: 400px;
+            outline: 1px solid;
+            overflow: scroll;
         }
     </style>
 </head>
@@ -130,10 +139,40 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="row">
-                            <ul class="list-group config"></ul>
-                            <div class="alert alert-light svg" role="alert"></div>
+                             <div class="col-6">
+                                <ul class="list-group config"></ul>
+                             </div>
+
+                               <div class="col-6">
+                                <div class="alert alert-light svg" role="alert"></div>
+                             </div>
+                        </div>
+
+                        <div class="row chat">
+                            <div class="col-12">
+
+                                <ul class="list-group dialog">
+                                  <li class="list-group-item">-</li>
+                                </ul>
+
+                                <div class="send-message-form" >
+                                  <div class="form-group">
+                                    <label 
+                                        for="messageInput">
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        class="form-control" 
+                                        id="messageInput" 
+                                        placeholder="Enter message">
+                                  </div>
+                                  <button class="btn btn-primary send-message">Send</button>
+                                </div>
+                            
+                            </div>
                         </div>
                     </div>
+
                     <div class="col-6">
                         <div class="table table-dark custom-table"></div>
                     </div>

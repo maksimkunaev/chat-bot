@@ -1,0 +1,10 @@
+Searching 1011 files for "vera6"
+
+/Users/maximkunaev/projects/private/net/neural/neural.js:
+   56  	console.log(`netPath`, netPath)
+   57  	const lstm = new brain.recurrent.LSTM();
+   58: 	lstm.fromJSON(require(netPath));
+   59  
+   60  	const encodedQuestion = serializer.encode(message)
+
+2 matches in 1 file

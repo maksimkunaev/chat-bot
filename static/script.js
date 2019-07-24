@@ -1,9 +1,17 @@
- var socket = io();
+  const socket = io();
+  let currentNet = {
+    name: ''
+  }
+
+  const dialogs = [];
 
   socket.on('init', function(data){
     init(data);
   });
 
+  socket.on('message', function(data){
+    addMessageToDialog(data, 'bot')
+  });
   socket.emit('init');
 
   function train(e) {
@@ -13,18 +21,22 @@
     const iterations = document.querySelector('#exampleInputIterations').value;
     const data = document.querySelector('#exampleInputData').value;
 
+    const netConfig = {};
+    const hiddenLayers = layers.split(',').map(layers => Number(layers)).filter(layer => layer);
+    if (hiddenLayers.length) {
+      netConfig.hiddenLayers = hiddenLayers;
+    }
+
     const settings = {
         config: {
         name,
-          from: 0,
-          to: Number(data),
+          from: 100,
+          to: 100 + Number(data),
         },
-        net: {
-          "hiddenLayers": layers.split(',').map(layers => Number(layers)),
-        },
+        net: netConfig,
         training: {
-        iterations: Number(iterations),
-        erroThresh: 0.011,
+          iterations: Number(iterations),
+          errorThresh: 0.0115,
       }
     }
 
@@ -35,14 +47,16 @@
     const netWrap = document.querySelector('.nets');
     const trainForm = document.querySelector('.train-form');
     const trainSubmit = document.querySelector('.train-submit');
+    const sendMessageButton = document.querySelector('.send-message');
+    // const inputMessage = document.querySelector('#messageInput');
     let netList = document.createElement('ul');
     netList.classList = 'list';
     const navList = document.querySelector('.navigation ul');
+   
     navList.addEventListener('click', onMenuClick)
     trainForm.addEventListener('sumbit', train)
     trainSubmit.addEventListener('click', train)
-
-    console.log(`trainForm`,trainForm)
+    sendMessageButton.addEventListener('click', sendMessage)
     netWrap.innerHTML = null;
     data.forEach((item, index)  => {
         const li = document.createElement('li');
@@ -60,15 +74,17 @@
         netList.appendChild(li);  
     })
 
-    createtable(data[0].table);
-    createConfig(data[0]) ;
-
+    const firstNet = data[0];
+    currentNet = firstNet;
+    if (firstNet) {
+      renderTable(firstNet.table);
+      renderConfig(firstNet);
+    }
     netWrap.appendChild(netList);
-
   }
  
 
-function createtable(data) {
+function renderTable(data) {
     const tableNode = document.querySelector('.table');
 
     const newData = JSON.parse(data);
@@ -105,16 +121,18 @@ function createtable(data) {
       const elem = netList.children[i];
 
       if (elem === event.target.closest('li')) {
-        netList.children[i].classList.add('active')
+        netList.children[i].classList.add('active');
       } else {
         netList.children[i].classList.remove('active')
       }
     }
-     console.log(event);
 
     const net = data.find(net => net.name === name);
-    createtable(net.table)
-    createConfig(net) ;
+    currentNet = net;
+
+    renderTable(net.table)
+    renderConfig(net);
+    renderDialog(name)
   }
    
 
@@ -124,7 +142,7 @@ const defaultData = {
 function onMenuClick(event) {
   const elemClicked = event.target.closest('li');
   const navList = event.target.closest('ul')
- 
+
   if (!elemClicked || !navList) return;
 
   for (var i = 0; i < navList.children.length; i++) {
@@ -146,18 +164,26 @@ function onMenuClick(event) {
   }
 }
 
-function createConfig(data) {
-  const config = document.querySelector('.list-group.config');
-  let settings = JSON.parse(data.settings) || [];
-  const svgData = data.svg;
+function sendMessage(event) {
+  event.preventDefault;
+  const form = event.target.closest('form');
+  const textInput = document.querySelector('#messageInput');
+  socket.emit('message', {
+    message: textInput.value,
+    netName: currentNet.name
+  })
+  addMessageToDialog({output: textInput.value, netName: currentNet.name}, 'human')
+  return false;
+}
 
-  console.log(`settings`, settings);
+function renderConfig(data) {
+  const config = document.querySelector('.list-group.config');
+  let settings = data.settings || [];
+  const svgData = data.svg;
 
   config.innerHTML = '';
 
   for (const key in settings) {
-
-
      const li = document.createElement('li');
       li.classList = `list-group-item`;
 
@@ -171,5 +197,28 @@ function createConfig(data) {
 
   const svg = document.querySelector('.svg');
   svg.innerHTML = svgData;  
-  console.log(svgData);
+}
+
+function addMessageToDialog({output, netName}, sentBy) {
+  const dialogList = dialogs.find(dialog => dialog.name === netName);
+  const botMessage = { message: output, sentBy };
+
+  if (!dialogList) {
+    dialogs.push({ name: netName, data: [ botMessage ]})
+  } else {
+    dialogList.data.push(botMessage);
+  }
+
+  renderDialog(netName)
+}
+
+function renderDialog(netName) {
+  const dialogList = dialogs.find(dialog => dialog.name === netName) || [];
+  const dialogElem = document.querySelector('.dialog');
+
+  const messagesContent = dialogList.data.map(({message}) => {
+    return `<li>${message}</li>`
+  }) 
+
+  dialogElem.innerHTML = messagesContent.join('');  
 }
