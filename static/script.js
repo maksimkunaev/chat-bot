@@ -30,13 +30,13 @@
     const settings = {
         config: {
         name,
-          from: 100,
-          to: 100 + Number(data),
+          from: 0,
+          to: Number(data),
         },
         net: netConfig,
         training: {
           iterations: Number(iterations),
-          errorThresh: 0.0115,
+          errorThresh: 0.012,
       }
     }
 

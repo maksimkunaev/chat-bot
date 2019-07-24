@@ -41,6 +41,8 @@ function createSVG(data) {
     const avg = sum/data.length;
     const max = 1.5 * avg;
 
+	const min = Math.min(...data);
+
 	const stepX = width / data.length;
 	const stepY = height / max;
 
@@ -48,11 +50,12 @@ function createSVG(data) {
 
 	data.forEach((item, i) => {
 		const y = height - (stepY * item);
-		path += `L ${stepX * i} ${y}`;
+		path += `L ${math.round(stepX * i)} ${Math.round(y)}`;
 	})
-
+	
 	const lastPoint = data[data.length - 1];
 	const y = height - (stepY * lastPoint);
+	const minPoint = height - (stepY * min);
 
 	return `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg" style="outline: 1px solid #ccc" >
 			<style>
@@ -60,6 +63,8 @@ function createSVG(data) {
 			</style>
 			<path d="M 0 0 ${path}" stroke-width="2px" stroke="#63e72c" fill="transparent"/>
 			<text x="80%" y="${y * 0.8}" class="text">${lastPoint.toFixed(3)}</text>
+			<line x1="0" y1="${y}" x2="100%" y2="${y}" stroke="#756f6f" />
+			<line x1="0" y1="${minPoint}" x2="100%" y2="${minPoint}" stroke="#756f6f" />
 		</svg>`;
 }
 
