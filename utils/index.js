@@ -22,7 +22,7 @@ function  createDefaulTable(data, net) {
 	return resultTable;
 }
 
-function decodeAnswer(output, decodeFunction) {
+function decodeAnswer(output) {
 	let answer = output.split('0.').slice(1).map(num => Number(`0.${num}`))
 
 	answer = serializer.decode(answer)
@@ -30,8 +30,8 @@ function decodeAnswer(output, decodeFunction) {
 }
 
 function createSVG(data) {
-	const width = 160;
-	const height = 50;
+	const width = 280;
+	const height = 120;
 
 	let sum = 0;
     for (let i = 0; i < data.length; i++) {
@@ -50,7 +50,7 @@ function createSVG(data) {
 
 	data.forEach((item, i) => {
 		const y = height - (stepY * item);
-		path += `L ${math.round(stepX * i)} ${Math.round(y)}`;
+		path += `L ${Math.round(stepX * i)} ${Math.round(y)}`;
 	})
 	
 	const lastPoint = data[data.length - 1];
@@ -62,9 +62,8 @@ function createSVG(data) {
 				.text { font: italic 10px sans-serif; fill: #756f6f; }
 			</style>
 			<path d="M 0 0 ${path}" stroke-width="2px" stroke="#63e72c" fill="transparent"/>
-			<text x="80%" y="${y * 0.8}" class="text">${lastPoint.toFixed(3)}</text>
-			<line x1="0" y1="${y}" x2="100%" y2="${y}" stroke="#756f6f" />
-			<line x1="0" y1="${minPoint}" x2="100%" y2="${minPoint}" stroke="#756f6f" />
+			<text x="3%" y="${y * 0.8}" class="text">${min.toFixed(3)}</text>
+			<line x1="0" y1="${minPoint}" x2="100%" y2="${minPoint}" stroke="rgba(117, 111, 111, 0.5)" />
 		</svg>`;
 }
 
@@ -72,7 +71,6 @@ function getError(details) {
 	const error = details.match(/error: \d+.\w+/g).map(elem => Number(elem.replace('error: ', '')))[0];
 	return error;
 }
-
 
 function saveNet(config) {
 	const {

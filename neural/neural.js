@@ -43,6 +43,7 @@ function train(settings) {
 		...settings.training,
 		trainTime,
 		iterations: errors.length,
+		errorThresh: errors[errors.length - 1].toFixed(4),
 	}
 	
 	const saveingConfig = {
