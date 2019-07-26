@@ -1,12 +1,11 @@
-
 const serializer = require('../utils/serialize');
 const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
 
-function  createDefaulTable(data, net) {
-	const resultTable = data.map(item => {
-		const { input, output } = item;
+function  createDefaultTable(data, net) {
+	return data.map(item => {
+		const { input } = item;
 
 		const encodedQuestion = serializer.encode(input)
 		const result = net.run(encodedQuestion);
@@ -18,8 +17,6 @@ function  createDefaulTable(data, net) {
 			output: answer,
 		}
 	})
-
-	return resultTable;
 }
 
 function decodeAnswer(output) {
@@ -30,8 +27,8 @@ function decodeAnswer(output) {
 }
 
 function createSVG(data) {
-	const width = 280;
-	const height = 120;
+	const width = 310;
+	const height = 135;
 
 	let sum = 0;
     for (let i = 0; i < data.length; i++) {
@@ -42,7 +39,6 @@ function createSVG(data) {
     const max = 1.5 * avg;
 
 	const min = Math.min(...data);
-
 	const stepX = width / data.length;
 	const stepY = height / max;
 
@@ -61,22 +57,20 @@ function createSVG(data) {
 			<style>
 				.text { font: italic 10px sans-serif; fill: #756f6f; }
 			</style>
-			<path d="M 0 0 ${path}" stroke-width="2px" stroke="#63e72c" fill="transparent"/>
+			<path d="M 0 0 ${path}" stroke-width="1px" stroke="#63e72c" fill="transparent"/>
 			<text x="3%" y="${y * 0.8}" class="text">${min.toFixed(3)}</text>
 			<line x1="0" y1="${minPoint}" x2="100%" y2="${minPoint}" stroke="rgba(117, 111, 111, 0.5)" />
 		</svg>`;
 }
 
 function getError(details) {
-	const error = details.match(/error: \d+.\w+/g).map(elem => Number(elem.replace('error: ', '')))[0];
-	return error;
+	return details.match(/error: \d+.\w+/g).map(elem => Number(elem.replace('error: ', '')))[0];
 }
 
 function saveNet(config) {
 	const {
 		name,
 		net,
-		netPath,
 		svg,
 		defaultTable,
 		defaultPath,
@@ -86,12 +80,6 @@ function saveNet(config) {
 	const dirPath = path.join(defaultPath, `${name}`)
 
 	mkdirp.sync(dirPath)
-
-	const data = {
-		net: JSON.stringify(net.toJSON(),null,2),
-		svg,
-		defaultTable,
-	}
 
 	saveStrem(dirPath, name + '.net.json', JSON.stringify(net.toJSON(),null,2))
 	saveStrem(dirPath, name + '.image.svg', svg)
@@ -107,7 +95,7 @@ function saveStrem(dirPath, name, content) {
 
 module.exports = {
 	createSVG,
-	createDefaulTable,
+	createDefaultTable,
 	getError,
 	saveNet,
 	decodeAnswer,

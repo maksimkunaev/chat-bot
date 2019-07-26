@@ -1,1 +1,1 @@
-{"trainingData":200,"name":"v2","hiddenLayers":[50,50,50],"iterations":150,"errorThresh":"0.0177","trainTime":859.982}
+{"trainingData":100,"name":"v2","hiddenLayers":[58,58],"iterations":200,"errorThresh":"0.0140","trainTime":633.638}

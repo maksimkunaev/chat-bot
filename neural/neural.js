@@ -3,7 +3,7 @@ const serializer = require('../utils/serialize');
 const utils = require('../utils/index');
 const fs = require('fs');
 const path = require('path');
-const { createSVG, createDefaulTable, getError, saveNet, decodeAnswer } = utils;
+const { createSVG, createDefaultTable, getError, saveNet, decodeAnswer } = utils;
 const defaultPath  = path.join(__dirname, "../nets/")
 const data = require('../data/total.json');
 const netsPath  = path.join(__dirname, "../nets/");
@@ -34,7 +34,7 @@ function train(settings) {
 	const trainTime = (Date.now() - startTime) / 1000;
 
 	const svg = createSVG(errors);
-	const defaultTable = createDefaulTable(trainingData, net)
+	const defaultTable = createDefaultTable(trainingData, net)
 
 	const savingSettings = {
 		trainingData: trainingData.length,
