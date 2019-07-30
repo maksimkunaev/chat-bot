@@ -151,13 +151,13 @@
                         <div class="row chat">
                             <div class="col-12">
 
-                                <ul class="list-group dialog">
-                                  <li class="list-group-item">-</li>
-                                </ul>
+                                <div class='dialog-wrap'>
+                                    <ul class="list-group dialog"></ul>
+                                </div>
 
-                                <div class="send-message-form" >
-                                  <div class="form-group">
-                                    <label 
+                                 <form class="send-message-form">
+                                   <div class="form-group">
+                                         <label 
                                         for="messageInput">
                                     </label>
                                     <input 
@@ -165,10 +165,10 @@
                                         class="form-control" 
                                         id="messageInput" 
                                         placeholder="Enter message">
-                                  </div>
-                                  <button class="btn btn-primary send-message">Send</button>
-                                </div>
-                            
+                                    </div>
+                                    <button type="submit" class="btn btn-primary send-message">Send</button>
+                                </form>
+
                             </div>
                         </div>
                     </div>

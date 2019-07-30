@@ -47,8 +47,10 @@
     const netWrap = document.querySelector('.nets');
     const trainForm = document.querySelector('.train-form');
     const trainSubmit = document.querySelector('.train-submit');
+
+    const sendForm = document.querySelector('.send-message-form');
     const sendMessageButton = document.querySelector('.send-message');
-    // const inputMessage = document.querySelector('#messageInput');
+
     let netList = document.createElement('ul');
     netList.classList = 'list';
     const navList = document.querySelector('.navigation ul');
@@ -56,6 +58,8 @@
     navList.addEventListener('click', onMenuClick)
     trainForm.addEventListener('sumbit', train)
     trainSubmit.addEventListener('click', train)
+
+    sendForm.addEventListener('sumbit', sendMessage)
     sendMessageButton.addEventListener('click', sendMessage)
     netWrap.innerHTML = null;
     data.forEach((item, index)  => {
@@ -165,7 +169,7 @@ function onMenuClick(event) {
 }
 
 function sendMessage(event) {
-  event.preventDefault;
+  event.preventDefault();
   const form = event.target.closest('form');
   const textInput = document.querySelector('#messageInput');
   socket.emit('message', {
