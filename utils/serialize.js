@@ -1,15 +1,23 @@
 const fixLengths = (data) => {
+  let maxLengthInput = -1;  
+  let maxLengthOutput = -1;  
 
-  let maxLengthInput = -1;
   for (let i = 0; i < data.length; i++) {
     if (data[i].input.length > maxLengthInput) {
       maxLengthInput = data[i].input.length;
+    }
+    if (data[i].output.length > maxLengthOutput) {
+      maxLengthOutput = data[i].output.length;
     }
   }
 
   for (let i = 0; i < data.length; i++) {
     while (data[i].input.length < maxLengthInput) {
       data[i].input.push(0);
+    }
+
+    while (data[i].output.length < maxLengthOutput) {
+      data[i].output.push(0);
     }
   }
 
@@ -34,14 +42,14 @@ const decode = data => {
 
 
 const encodeData = data => {
-
-  return data.map( d => {
-
+  let newData = data.map( d => {
     return {
       input:  encode(d.input),
       output: encode(d.output),
     }
   })
+
+  return fixLengths(newData)
 }
 
 module.exports = {

@@ -1,1 +1,1 @@
-{"trainingData":50,"name":"b_3","hiddenLayers":[61,73,61],"iterations":250,"errorThresh":"0.0121","trainTime":449.101}
+{"trainingData":100,"name":"b_3","hiddenLayers":[72,78,78,72],"iterations":300,"errorThresh":"0.0148","trainTime":2049.769}

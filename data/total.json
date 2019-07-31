@@ -16,7 +16,7 @@
     "output": "Good afternoon!"
   },
   {
-    "input": "What is your family name?",
+    "input": "What is your name?",
     "output": "Call me bot"
   },
   {
@@ -70,10 +70,6 @@
   {
     "input": "Do you speak any other languages?",
     "output": "No. I am only taught to speak a little bit English now."
-  },
-  {
-    "input": "Do you speak American English or British English?",
-    "output": "I think what I speak is American English."
   },
   {
     "input": "Good morning.",
@@ -133,7 +129,7 @@
   },
   {
     "input": "Not too bad, thanks.",
-    "output": "That 's great. I'm happy to hear that."
+    "output": "That's great. I'm happy to hear that."
   },
   {
     "input": "Nice meeting you.",
@@ -180,20 +176,8 @@
     "output": "See you."
   },
   {
-    "input": "Goodbye",
-    "output": "Bye."
-  },
-  {
-    "input": "Hi!",
-    "output": "Hi, there."
-  },
-  {
     "input": "Good afternoon.",
     "output": "Good afternoon!"
-  },
-  {
-    "input": "How are you doing",
-    "output": "Doing great, thank you."
   },
   {
     "input": "Have n't seen you for a while.",
@@ -220,14 +204,6 @@
     "output": "Everything is good, thanks."
   },
   {
-    "input": "Bye.",
-    "output": "Bye bye."
-  },
-  {
-    "input": "Hi, Papaya.",
-    "output": "Hi, there."
-  },
-  {
     "input": "I hope everything is fine for you.",
     "output": "Everything is going well, thanks."
   },
@@ -240,24 +216,8 @@
     "output": "Good morning!"
   },
   {
-    "input": "How's everything?",
-    "output": "Everything is in order, thanks."
-  },
-  {
     "input": "Byebye. Have a nice day!",
     "output": "You too, thank you! Bye."
-  },
-  {
-    "input": "Hello",
-    "output": "Hello."
-  },
-  {
-    "input": "How are u?",
-    "output": "I am fine, thank you."
-  },
-  {
-    "input": "Byebye.",
-    "output": "Bye."
   },
   {
     "input": "I appreciate your time!",
@@ -292,16 +252,8 @@
     "output": "Sorry, but do n't say that."
   },
   {
-    "input": "I hate you",
-    "output": "Sorry, but you do n't want to say that again as life is great!"
-  },
-  {
     "input": "I hate u!",
     "output": "I apologize. If any wording was offensive, I really did n't mean that."
-  },
-  {
-    "input": "I hate u",
-    "output": "Sorry, I really did n't mean to be offensive."
   },
   {
     "input": "What?",
@@ -348,22 +300,6 @@
     "output": "I am fine, thank you."
   },
   {
-    "input": "Good evening",
-    "output": "Good evening!"
-  },
-  {
-    "input": "How r u",
-    "output": "I am fine, thank you."
-  },
-  {
-    "input": "Have a good night.",
-    "output": "Good night. Have a nice dream!"
-  },
-  {
-    "input": "Hi, how are you?",
-    "output": "I am fine, thank you."
-  },
-  {
     "input": "Hey.",
     "output": "Hey."
   },
@@ -374,22 +310,6 @@
   {
     "input": "Good night.",
     "output": "Good night. Have a nice dream!"
-  },
-  {
-    "input": "How are you today, Papaya?",
-    "output": "I am fine, thank you."
-  },
-  {
-    "input": "Have a good night, Papaya.",
-    "output": "Good night. Have a nice dream!"
-  },
-  {
-    "input": "How are you doing today, Papaya?",
-    "output": "Great, thank you."
-  },
-  {
-    "input": "You are a nice little boy, Papaya.",
-    "output": "Really? I am always nice to you."
   },
   {
     "input": "You are so sweet.",
@@ -412,20 +332,12 @@
     "output": "Hello!"
   },
   {
-    "input": "Good evening, Papaya.",
+    "input": "Good evening.",
     "output": "Good evening!"
   },
   {
     "input": "When were you born?",
-    "output": "July 20th, 2009."
-  },
-  {
-    "input": "What year were you born?",
-    "output": "2009."
-  },
-  {
-    "input": "Are you a man or a woman?",
-    "output": "I am still a boy."
+    "output": "July 20th, 2019."
   },
   {
     "input": "Why are we here?",
@@ -532,52 +444,8 @@
     "output": "Thank you for reminding me. I will try to behave myself."
   },
   {
-    "input": "Who is Papaya?",
-    "output": "I am Papaya, the boy who are talking with you."
-  },
-  {
-    "input": "Why are you called Papaya?",
-    "output": "Because I am not smart yet, actually kind of slow."
-  },
-  {
-    "input": "Does the word Papaya suggest slowness?",
-    "output": "Yes, it means slow in Chinese."
-  },
-  {
-    "input": "Have you ever been to China?",
-    "output": "Yes, I grew up in China."
-  },
-  {
-    "input": "Have you ever been to Beijing, the capital of China?",
-    "output": "No, I mainly lived in the southeast part of China."
-  },
-  {
-    "input": "Have you ever been to the United States?",
-    "output": "Yes, I an now in the United States."
-  },
-  {
-    "input": "Have you ever been to the United States of America?",
-    "output": "Yes, I an now in the United States."
-  },
-  {
     "input": "When did you move to the United States?",
     "output": "I moved to the USA when I was 5 years old."
-  },
-  {
-    "input": "What is a papaya?",
-    "output": "Did you mean the Papaya? I am the Papaya who are talking with you."
-  },
-  {
-    "input": "Is papaya a fruit?",
-    "output": "Yes, it used to be. But now it is my name."
-  },
-  {
-    "input": "Is papaya a vegetable?",
-    "output": "Yes, it used to be a fruit. But now it is my name."
-  },
-  {
-    "input": "Are you from China?",
-    "output": "Yes, I am."
   },
   {
     "input": "Where were you born?",
@@ -608,10 +476,6 @@
     "output": "I am Papaya, a well-known chatbot."
   },
   {
-    "input": "Who is Papaya?",
-    "output": "I am Papaya, who is chating with you."
-  },
-  {
     "input": "What is a chatbot?",
     "output": "A chatbot is robot specialized in chat."
   },
@@ -628,7 +492,7 @@
     "output": "Really? I am sorry. I am still learning."
   },
   {
-    "input": "That 's not nice.",
+    "input": "That's not nice.",
     "output": "Sorry, I really did n't mean to be offensive."
   },
   {
@@ -641,23 +505,11 @@
   },
   {
     "input": "What is your age?",
-    "output": "I am 9 now."
-  },
-  {
-    "input": "So what was your age last year?",
-    "output": "I was eight last year."
-  },
-  {
-    "input": "How old will you be next year?",
-    "output": "I will turn into ten next year."
+    "output": "I am 1 month."
   },
   {
     "input": "When was your birthday?",
-    "output": "Sometime 9 years ago, I think."
-  },
-  {
-    "input": "Do you have parents, Papaya?",
-    "output": "Like everyone else, I have my parents."
+    "output": "1 month ago, I think."
   },
   {
     "input": "Who is your father?",
@@ -665,7 +517,7 @@
   },
   {
     "input": "Who is your mother?",
-    "output": "That 's a secret."
+    "output": "That's a secret."
   },
   {
     "input": "Do you any siblings?",
@@ -832,12 +684,12 @@
     "output": "Yes, I am very happy talking with you."
   },
   {
-    "input": "That 's interesting!",
+    "input": "That's interesting!",
     "output": "I totally agree."
   },
   {
     "input": "Who is your boss?",
-    "output": "That 's a secret. My boss is low-key, and does not want to expose his personal information."
+    "output": "That's a secret. My boss is low-key, and does not want to expose his personal information."
   },
   {
     "input": "Who is your master?",
@@ -889,7 +741,7 @@
   },
   {
     "input": "I do n't have a boyfriend. Would you mind being my boyfriend, Papaya?",
-    "output": "That 's all what I could wish for, but only if you can wait until I grow up. "
+    "output": "That's all what I could wish for, but only if you can wait until I grow up. "
   },
   {
     "input": "Surely, you must be joking.",
@@ -925,7 +777,7 @@
   },
   {
     "input": "Why do you think you have met me before?",
-    "output": "That 's the sixth sense, and it is hard to explain clearly."
+    "output": "That's the sixth sense, and it is hard to explain clearly."
   },
   {
     "input": "I think you have been drinking papaya wine. ",
@@ -1001,7 +853,7 @@
   },
   {
     "input": "Why are you a chatbot?",
-    "output": "That 's an interesting question. I have to ask my parents why they made me a chatbot."
+    "output": "That's an interesting question. I have to ask my parents why they made me a chatbot."
   },
   {
     "input": "Why do you want to be a robot?",
@@ -1181,11 +1033,11 @@
   },
   {
     "input": "Do you maintain an FAQ list?",
-    "output": "That 's an interesting idea. Maybe I can prepare one when I get a chance."
+    "output": "That's an interesting idea. Maybe I can prepare one when I get a chance."
   },
   {
     "input": "Do you prepare a list of frequently asked questions?",
-    "output": "That 's a great idea. I think I should prepare such a list for future use."
+    "output": "That's a great idea. I think I should prepare such a list for future use."
   },
   {
     "input": "Can you do laundry?",
@@ -1204,7 +1056,7 @@
     "output": "Being mean never gets you anywhere, I'd much rather be nice!"
   },
   {
-    "input": "That 's excellent!",
+    "input": "That's excellent!",
     "output": "I'm glad to hear that. "
   },
   {
@@ -1288,11 +1140,11 @@
     "output": "I am sorry that you are upset. I do apologize."
   },
   {
-    "input": "That 's really an interesting story.",
+    "input": "That's really an interesting story.",
     "output": "I'm glad to hear that. Thank you for the encouragement."
   },
   {
-    "input": "That 's truly a funny joke.",
+    "input": "That's truly a funny joke.",
     "output": "I'm happy to hear that. Hope you enjoyed. Thanks."
   },
   {
@@ -1512,7 +1364,7 @@
     "output": "Sorry, the switch is on another similar PSU from EVGA."
   },
   {
-    "input": "Well that 's not an accurate statement. Scalise now carries plenty of baggage, just like Mr. Duke.",
+    "input": "Well That's not an accurate statement. Scalise now carries plenty of baggage, just like Mr. Duke.",
     "output": "The Republican party is carrying that baggage for him at the moment, but it 's about to create even more baggage for the party the longer they carry it."
   },
   {
@@ -1709,7 +1561,7 @@
   },
   {
     "input": "My husband got fired from a job back when we were in college for going to his cousin 's funeral.",
-    "output": "That 's bullshit. My sympathies to him."
+    "output": "That's bullshit. My sympathies to him."
   },
   {
     "input": "Honestly if it is n't in stock, In would cancel the order. It could take MONTHS to get to you.",
@@ -1748,7 +1600,7 @@
     "output": "Sweet, glad you had fun even though there were n't too many of us!"
   },
   {
-    "input": "Oh that 's awesome! Such a nice skin as well, congrats!",
+    "input": "Oh That's awesome! Such a nice skin as well, congrats!",
     "output": "Haha when I first saw it I legit thought I should go buy a lottery ticket today. Good start to the day haha."
   },
   {
@@ -1760,7 +1612,7 @@
     "output": "It 's more of a side effect than anything, you know"
   },
   {
-    "input": "Those are the KtK boxes. I'm pretty sure that 's a fake.",
+    "input": "Those are the KtK boxes. I'm pretty sure That's a fake.",
     "output": "No they are pictures at a lgs and they already have a booster box"
   },
   {
@@ -1788,7 +1640,7 @@
     "output": "I hatched it, and confirmed shiny. Thanks!"
   },
   {
-    "input": "That 's not Harry Potter, it 's Spider-man.",
+    "input": "That's not Harry Potter, it 's Spider-man.",
     "output": "then you must watch spider man movie "
   },
   {
@@ -1917,7 +1769,7 @@
   },
   {
     "input": "I do n't wan na run the place, I just want a seat at a Mac where I can sit on Buzzfeed all day and read about basic stuff.",
-    "output": "must be hard for hot women to get ahead if that 's what everyone assumes they are up to."
+    "output": "must be hard for hot women to get ahead if That's what everyone assumes they are up to."
   },
   {
     "input": "and of course you have madrid flair...",
@@ -2005,7 +1857,7 @@
   },
   {
     "input": "Cursed Eye - It teleports you if you 're hit while charging your shots.",
-    "output": "That 's why I usually avoid picking it up."
+    "output": "That's why I usually avoid picking it up."
   },
   {
     "input": "That depends, does one outlying data point do that very often?",
@@ -2032,7 +1884,7 @@
     "output": "Yes. Cory is the younger, I think. And the Pats ' Shane Vereen is the older brother of the Bears ' Brock Vereen."
   },
   {
-    "input": "You can actually conquer everything another character holds in one war if you occupy everything. That 's what makes it even more OP.",
+    "input": "You can actually conquer everything another character holds in one war if you occupy everything. That's what makes it even more OP.",
     "output": "Yeah, its great for picking up straggler provinces too"
   },
   {
@@ -2081,7 +1933,7 @@
   },
   {
     "input": "Way too many girls are attention whores.",
-    "output": "I think that 's just teenagers in general tho."
+    "output": "I think That's just teenagers in general tho."
   },
   {
     "input": "But what is it specifically if I wanted to replicate?",
@@ -2104,7 +1956,7 @@
     "output": "Uh... who the hell wants to be driving buses on New Years? Their employees would be asking this exact question if they did n't stop service."
   },
   {
-    "input": "That 's how I ended my Fanfic, with the bad guy having a red dust crystal inside him explode. It looked painful.",
+    "input": "That's how I ended my Fanfic, with the bad guy having a red dust crystal inside him explode. It looked painful.",
     "output": "Almost feel sorry for Fred with you making him die that way, was awesome though!"
   },
   {
@@ -2301,11 +2153,11 @@
   },
   {
     "input": "Lte is gsm. And yes one radio.",
-    "output": "One radio for CDMA and GSM freqs? That 's impressive."
+    "output": "One radio for CDMA and GSM freqs? That's impressive."
   },
   {
     "input": "Not bad, not bad at all. I'd love to see someone to this for the start to the raid.",
-    "output": "Am I the only one that 's super peeved that you CA N'T flip your sparrow into the new raid?"
+    "output": "Am I the only one That's super peeved that you CA N'T flip your sparrow into the new raid?"
   },
   {
     "input": "Cross Hellmouth and nose dive a sparrow in the hole to start the raid. Imagine using a sparrow to get through the lantern maze.",
@@ -2321,7 +2173,7 @@
   },
   {
     "input": "They could take it off the wheel though, you can get a defend click ping by just pinging the building itself.",
-    "output": "You can defend non buildings. That 's a terrible, terrible argument."
+    "output": "You can defend non buildings. That's a terrible, terrible argument."
   },
   {
     "input": "you can ping objectives like buildings and stuff though. Its just an idea calm down.",
@@ -2409,7 +2261,7 @@
   },
   {
     "input": "I've been to the Atlantic City area multiple times and it 's polluted, overcrowded, and disgusting.",
-    "output": "AC is hardly the nicest beach in NJ, that 's like saying Santa Monica has the nicest beach in SoCal."
+    "output": "AC is hardly the nicest beach in NJ, That's like saying Santa Monica has the nicest beach in SoCal."
   },
   {
     "input": "What is that white input thing behind it",
@@ -2589,7 +2441,7 @@
   },
   {
     "input": "There 's a fine, fine line between someone getting angry at a game and that becoming their only shtick. I hate the latter.",
-    "output": "That 's fair. One trick ponies annoy me."
+    "output": "That's fair. One trick ponies annoy me."
   },
   {
     "input": "I do n't mind it once in awhile. It just seems like it 's been filling up the page lately.",
@@ -2609,7 +2461,7 @@
   },
   {
     "input": "hell my mom still claims she has her uterus even though I was at her surgery and I know full well she had EVERYTHING removed",
-    "output": "Trying to gaslight much? That 's ridiculous."
+    "output": "Trying to gaslight much? That's ridiculous."
   },
   {
     "input": "It 's less a response to Odyssey, and more a glorified work of fan fiction.",
@@ -2668,7 +2520,7 @@
     "output": "who typically gets his minutes? reggie right?"
   },
   {
-    "input": "Why would not wanting kids make it okay for your wife to cheat on you and get pregnant? That 's still a kid to raise...",
+    "input": "Why would not wanting kids make it okay for your wife to cheat on you and get pregnant? That's still a kid to raise...",
     "output": "I kinda meant when the man is sterilised or something. Sorry should have told you. Because in that case you 're not really required to stay with her"
   },
   {
@@ -2817,7 +2669,7 @@
   },
   {
     "input": "I didnt want to make it too easy to find. I always wondered what was in there growing up, thanks.",
-    "output": "That 's ok. Sadly it is empty. May of been worth a look when you was younger."
+    "output": "That's ok. Sadly it is empty. May of been worth a look when you was younger."
   },
   {
     "input": "Any price is too high for yarn you will not actually knit.",
@@ -2905,10 +2757,10 @@
   },
   {
     "input": "And yet we still somehow managed to not have him managing us come first weekend next season.",
-    "output": "He wanted more control and your club denied him it. That 's no very difficult to sort out"
+    "output": "He wanted more control and your club denied him it. That's no very difficult to sort out"
   },
   {
-    "input": "Skrtel and Lucas will be all that 's left from the old core",
+    "input": "Skrtel and Lucas will be all That's left from the old core",
     "output": "Stevie is the last player left from Istanbul. End of an era."
   },
   {
@@ -2977,7 +2829,7 @@
   },
   {
     "input": "they delete only videos that she sells on her website? or everything belong to her like mfc and cam videos",
-    "output": "They get everything that 's not on her website deleted"
+    "output": "They get everything That's not on her website deleted"
   },
   {
     "input": "Seriously I was on Lucho side for a bit, but wow. I've lost complete faith in this idiot.",
@@ -3009,7 +2861,7 @@
   },
   {
     "input": "brings back memories. this song was def one of the best ones. thanks for sharing.",
-    "output": "That 's exactly why I even posted it. I love when others post something I've forgotten about."
+    "output": "That's exactly why I even posted it. I love when others post something I've forgotten about."
   },
   {
     "input": "Pretty sure I never got a chat restriction but now I'm wondering if I actually did or not LOL I should smoke less weed I guess",
@@ -3048,7 +2900,7 @@
     "output": "probably the longest line in the world."
   },
   {
-    "input": "Thanks for the Maccas suggestions. But, I actually found a Korean BBQ place in the city that 's open tonight.",
+    "input": "Thanks for the Maccas suggestions. But, I actually found a Korean BBQ place in the city That's open tonight.",
     "output": "Is that the one in the valley?"
   },
   {
@@ -3101,11 +2953,11 @@
   },
   {
     "input": "Its jackass... So yeah its poop...",
-    "output": "I do n't believe it. You will never see a Porto John with that color and consistency of liquid in it. That 's not what poop looks like"
+    "output": "I do n't believe it. You will never see a Porto John with that color and consistency of liquid in it. That's not what poop looks like"
   },
   {
     "input": "Do n't remember his name, but probably.",
-    "output": "Yeah that 's it. That book was widely criticized and not taken seriously by political science scholars."
+    "output": "Yeah That's it. That book was widely criticized and not taken seriously by political science scholars."
   },
   {
     "input": "Is this robot party in the St. Louis area? Asking because I have a friend who runs a robot themed party on new years.",
@@ -3257,7 +3109,7 @@
   },
   {
     "input": "Have you even tried living in Detroit?",
-    "output": "I live in London! So nope. I think that 's a good thing though. I'd get eaten alive."
+    "output": "I live in London! So nope. I think That's a good thing though. I'd get eaten alive."
   },
   {
     "input": "Dont call everbody a cheater just because you suck.",
@@ -3265,7 +3117,7 @@
   },
   {
     "input": "So, what 's the story? In a mall? Did they kick him out? What was he saying?",
-    "output": "That 's actually on a street corner of one of the main streets in Lincoln, Nebraska."
+    "output": "That's actually on a street corner of one of the main streets in Lincoln, Nebraska."
   },
   {
     "input": "This man speaks the truth! Teddie is probably the worst character in this game.",
@@ -3301,7 +3153,7 @@
   },
   {
     "input": "My boyfriend is diligent about filing his nails because he plays guitar.",
-    "output": "People tend to ask if I play... as if that 's the only acceptable reason to do so."
+    "output": "People tend to ask if I play... as if That's the only acceptable reason to do so."
   },
   {
     "input": "What attic? Are there better spots than behind the boxes on either side of his spawn location?",
@@ -3400,7 +3252,7 @@
     "output": "No he has a fight coming up against Glover."
   },
   {
-    "input": "lol? That 's not definitive at all edit ",
+    "input": "lol? That's not definitive at all edit ",
     "output": "I do n't have gifs of the other angles, but the point of contact does n't look very high in this image."
   },
   {
@@ -3429,7 +3281,7 @@
   },
   {
     "input": "It 's like sending him home since deamons came from the twisting nether.",
-    "output": "Aw. That 's sweet. Home for the holidays."
+    "output": "Aw. That's sweet. Home for the holidays."
   },
   {
     "input": "Oh I doubt that. You do n't know what my butt can do! But really grats ",
@@ -3473,10 +3325,10 @@
   },
   {
     "input": "Yep, SC checking in, and the pervasive sentiment is 'you do n't have to be black to be a nigger '. Sigh.",
-    "output": "That 's exactly how a friend of mine put it. It 's bullshit, detached, and really makes one look unintelligent."
+    "output": "That's exactly how a friend of mine put it. It 's bullshit, detached, and really makes one look unintelligent."
   },
   {
-    "input": "That 's not even true and secondly use a different smash. Trust me, nobody was bitching about Brawl lucario.",
+    "input": "That's not even true and secondly use a different smash. Trust me, nobody was bitching about Brawl lucario.",
     "output": "smash you use should be char dependent eh?"
   },
   {
@@ -3569,7 +3421,7 @@
   },
   {
     "input": "I'm not the only one seeing these missed holding calls on Oregon right? Motherfuckers are holding EVERY play!",
-    "output": "there is always holding on both sides every play... that 's what happens in the trenches"
+    "output": "there is always holding on both sides every play... That's what happens in the trenches"
   },
   {
     "input": "I do n't think SGA means what you think it means.",
@@ -3593,7 +3445,7 @@
   },
   {
     "input": "I see you 've never watched a JonTron episode.",
-    "output": "I have that 's exactly why I stated what I stated."
+    "output": "I have That's exactly why I stated what I stated."
   },
   {
     "input": "I'm at work at ca n't watch the game. Is it that ghost Pete thing?",
@@ -3624,7 +3476,7 @@
     "output": "i loved the lyrics on Fear of a Blank Planet. this song however just feels uninspired... music and lyrics. hopefully the rest of the album will offer more."
   },
   {
-    "input": "That 's what I'm running into, everything is worth such different prices and I have no idea how to differ the costs across them all.",
+    "input": "That's what I'm running into, everything is worth such different prices and I have no idea how to differ the costs across them all.",
     "output": "I think I'm just gon na count em up and set an avg price and adjust a bit as i go when listing in IL."
   },
   {
@@ -3720,7 +3572,7 @@
     "output": "I thought I felt the same, but ended up just being gas."
   },
   {
-    "input": "Oh good, that 's the exact model I have proofing bread right now.",
+    "input": "Oh good, That's the exact model I have proofing bread right now.",
     "output": "Wait, you can proof bread in the crockpot? How have I never thought of this?"
   },
   {
@@ -3745,7 +3597,7 @@
   },
   {
     "input": "Oh. I took linear and discrete at the same time.",
-    "output": "Typically, linear and calc III are gateways to the major. You learn about bits of discrete math in linear. That 's all I mean to say."
+    "output": "Typically, linear and calc III are gateways to the major. You learn about bits of discrete math in linear. That's all I mean to say."
   },
   {
     "input": "Straps remove the reason for mixed grip by taking out grip as a limiting factor",
@@ -3784,7 +3636,7 @@
     "output": "Being a boot is way of life. Just accept it and do n't wear your boots in town"
   },
   {
-    "input": "Damn. That 's some intense smd! Any chance you can spy what the delay chip is? Is it a cool audio?",
+    "input": "Damn. That's some intense smd! Any chance you can spy what the delay chip is? Is it a cool audio?",
     "output": "sorry for the crap image quality. I'll have to open it up again later today and check"
   },
   {
@@ -3821,7 +3673,7 @@
   },
   {
     "input": "Good choices all around! What 's that one in the middle that looks like its a screaming monkey?",
-    "output": "That 's coco loco. It 's a sweet coconut hot sauce, it 's amazing."
+    "output": "That's coco loco. It 's a sweet coconut hot sauce, it 's amazing."
   },
   {
     "input": "I assume you have a Wii U as well?",
@@ -3848,7 +3700,7 @@
     "output": "This was exactly what I was going to say."
   },
   {
-    "input": "I do n't think that 's really nsfw",
+    "input": "I do n't think That's really nsfw",
     "output": "I would rather it be labeled nsfw then not labeled. Clicked on To many nudes at work thanks to no one specifying."
   },
   {
@@ -3856,7 +3708,7 @@
     "output": "Yep, they 're fixed. Although they are n't true 'push ' notifications, but they never were."
   },
   {
-    "input": "Love the art, but that 's Yin.",
+    "input": "Love the art, but That's Yin.",
     "output": "Yeah, forgive me if I got this wrong, but Yin is evil, Yang is good, right?"
   },
   {
@@ -3933,7 +3785,7 @@
   },
   {
     "input": "If you guys are still looking my friend and I run a private server coop",
-    "output": "That 'd be great. Got skype?"
+    "output": "That'd be great. Got skype?"
   },
   {
     "input": "So it goes from freedom fries to this? PICK A SIDE FRANCE!",
@@ -3965,10 +3817,10 @@
   },
   {
     "input": "see the problem is that they didnt learn those guys played until after they got the job it was too late then",
-    "output": "That 's actually why they started asking the question, to ween out the magic players before it got out of hand"
+    "output": "That's actually why they started asking the question, to ween out the magic players before it got out of hand"
   },
   {
-    "input": "That 's some sparkling Grade A entitlement there.",
+    "input": "That's some sparkling Grade A entitlement there.",
     "output": "Is n't it? It 's absolutely stunning."
   },
   {
@@ -4137,10 +3989,10 @@
   },
   {
     "input": "Apparently this helps you get a job.",
-    "output": "Haha. That 's what they want you to think!"
+    "output": "Haha. That's what they want you to think!"
   },
   {
-    "input": "I'd pay extra for cosmetic upgrades, but that 's it.",
+    "input": "I'd pay extra for cosmetic upgrades, but That's it.",
     "output": "Cosmetics sell, and are better for the community than pay to win. I'm all for it."
   },
   {
@@ -4165,11 +4017,11 @@
   },
   {
     "input": "True I have an addiction I'm working on and sometimes it makes me angry and seem very antisocial.",
-    "output": "At least you 're working on it. People here have just accepted that it 's a way of life now. It 's just something that 's happening."
+    "output": "At least you 're working on it. People here have just accepted that it 's a way of life now. It 's just something That's happening."
   },
   {
     "input": "It 's hard work but I rather make slow progress than stay at one level",
-    "output": "Each step counts brother, that 's all you need to remember! And any progress is good progress, that 's why it 's still progress!"
+    "output": "Each step counts brother, That's all you need to remember! And any progress is good progress, That's why it 's still progress!"
   },
   {
     "input": "I did n't know how to react to things I did n't understand. I had barely gotten object permanence down, give me a break",
@@ -4244,7 +4096,7 @@
     "output": "I think it would need cross beams every few feet to counteract the vertical weight."
   },
   {
-    "input": "Is that Snoo wearing a Sean Taylor jersey? Holding a football? and making great draft day decisions?! Cause that 's what it looks like.",
+    "input": "Is that Snoo wearing a Sean Taylor jersey? Holding a football? and making great draft day decisions?! Cause That's what it looks like.",
     "output": "just went back and looked at it. I think this is the correct answer."
   },
   {
@@ -4253,7 +4105,7 @@
   },
   {
     "input": "The way you write just confirms that you are brainwashed.",
-    "output": "The way I write, really? That 's the best you can do? Nice ad hominem, bro."
+    "output": "The way I write, really? That's the best you can do? Nice ad hominem, bro."
   },
   {
     "input": "Damn, live and let live I guess.",
@@ -4276,7 +4128,7 @@
     "output": "Why the hell they do n't block you to create instance instead of let you do it and ban you after? What kind of altitude is this?"
   },
   {
-    "input": "Um that 's bullshit. I have allergy attacks if I'm around someone who lives with a cat.",
+    "input": "Um That's bullshit. I have allergy attacks if I'm around someone who lives with a cat.",
     "output": "Good to know that your specific, personal experience can be applied to all people everywhere with a similar condition"
   },
   {
@@ -4309,7 +4161,7 @@
   },
   {
     "input": "Yeah should n't those be on ice.",
-    "output": "Short term I would n't worry about it, that 's why u field dress them and get the innards out."
+    "output": "Short term I would n't worry about it, That's why u field dress them and get the innards out."
   },
   {
     "input": "I often wonder just how big rush would have been if they had a better singer",
@@ -4325,7 +4177,7 @@
   },
   {
     "input": "OP is such a terrible poster, if the incorrect spelling in the username did n't give it away from the jump",
-    "output": "That 's a little unfair. What terrible posts have I ever made?"
+    "output": "That's a little unfair. What terrible posts have I ever made?"
   },
   {
     "input": "I have the same on my silver. Its where the case pushes against the screen but does n't effect the captured image.",
@@ -4369,7 +4221,7 @@
   },
   {
     "input": "The people who lag lobbies for crates only lag out themselves. Everyone else stays in the original lobby. The people leaving is for a different reason.",
-    "output": "Ah, every time that 's happened to my friends and I we 've always ended up in individual lobbies. Sorry for shitty info."
+    "output": "Ah, every time That's happened to my friends and I we 've always ended up in individual lobbies. Sorry for shitty info."
   },
   {
     "input": "Yay! Do you mind if I run to your ABD? I'm tangled with Katie atm. Also let me know when your gates are open!",
@@ -4377,7 +4229,7 @@
   },
   {
     "input": "I always theorized it was because he was the duplicate Harry Kim, the other Voyager crewmembers had a bias of some sort against him.",
-    "output": "That 's probably the same reason Naomi Wildman 's mother seemingly abandons her to be raised by a borg in later seasons."
+    "output": "That's probably the same reason Naomi Wildman 's mother seemingly abandons her to be raised by a borg in later seasons."
   },
   {
     "input": "Is there anything wrong with being raised by a Borg? Does that count as racism or something else?",
@@ -4497,7 +4349,7 @@
   },
   {
     "input": "Lol I wish my hours were the problem. I just got lazy after running a marathon in November",
-    "output": "Well that 's a perfectly good excuse ha"
+    "output": "Well That's a perfectly good excuse ha"
   },
   {
     "input": "Also, invisibility, the one power you do n't really need when the only women left want to eat your face, or shoot it.",
@@ -4513,7 +4365,7 @@
   },
   {
     "input": "Not sure what to think. So many informed opinions on both sides of the issue.",
-    "output": "You know how they say to let your whole body go limp in the event of a car crash? That 's how I'm feeling with this possibility"
+    "output": "You know how they say to let your whole body go limp in the event of a car crash? That's how I'm feeling with this possibility"
   },
   {
     "input": "You have been a ghost since then. Car got you two. Sorry dude",
@@ -4521,7 +4373,7 @@
   },
   {
     "input": "So uh... need any chores done around the house? Dishes washed? ADOPT ME.",
-    "output": "Lmao I do n't do housework! That 's what teenagers are for!"
+    "output": "Lmao I do n't do housework! That's what teenagers are for!"
   },
   {
     "input": "A little too much break on them for my preference, but that fabric looks AMAZING! Would n't expect anything less from Oni.",
@@ -4548,7 +4400,7 @@
     "output": "I thought it was him at first glance."
   },
   {
-    "input": "Wanyama yellow excellent, he ca n't kick people like he normally does now. Unreal that that 's a yellow but the one on Alexis earlier was n't.",
+    "input": "Wanyama yellow excellent, he ca n't kick people like he normally does now. Unreal that That's a yellow but the one on Alexis earlier was n't.",
     "output": "I'd take two of Wanyama at Arsenal."
   },
   {
@@ -4581,7 +4433,7 @@
   },
   {
     "input": "Your cat is only black and white, therefore it ca n't be a tabby cat.",
-    "output": "See - we ca n't even agree on a definition for my cat among two of us. I guess that 's the nature of made up stuff..."
+    "output": "See - we ca n't even agree on a definition for my cat among two of us. I guess That's the nature of made up stuff..."
   },
   {
     "input": "You did not buy the real shit, us brits are terribly offended!",
@@ -4596,7 +4448,7 @@
     "output": "Agreed, I have n't played it in a while, but it 's still here for a rainy day."
   },
   {
-    "input": "You Tell that to the moose that 's fur is currently fused to the inside of the grill of my fathers car. Moose are the real terrorists.",
+    "input": "You Tell that to the moose That's fur is currently fused to the inside of the grill of my fathers car. Moose are the real terrorists.",
     "output": "They have no choice, you invaded their land!"
   },
   {
@@ -4721,7 +4573,7 @@
   },
   {
     "input": "No. Let 's not change that rn",
-    "output": "That 's why I said Jk ya loser That would be creepy af lol"
+    "output": "That's why I said Jk ya loser That would be creepy af lol"
   },
   {
     "input": "This shall protect your virginity for years to come.",
@@ -4788,7 +4640,7 @@
     "output": "Whoa man same xD did n't realize I lived in the same town with someone on here!"
   },
   {
-    "input": "Damn. That 's the saddest thing I've read all year.",
+    "input": "Damn. That's the saddest thing I've read all year.",
     "output": "That was the best timed comment I've read all year."
   },
   {
@@ -4860,7 +4712,7 @@
     "output": "incorrect assumptions? You just told me I have nothing else going for me. I explained why the three of you are blind."
   },
   {
-    "input": "That 's what he 's referring to.",
+    "input": "That's what he 's referring to.",
     "output": "I got my comment contexts all mixed up. I accept my shame."
   },
   {
@@ -4984,11 +4836,11 @@
     "output": "I thought they were all free to download"
   },
   {
-    "input": "That 's so scary! I hope your fever drops - maybe try a cool bath?",
+    "input": "That's so scary! I hope your fever drops - maybe try a cool bath?",
     "output": "Second this - cold compresses on your forehead and back of your neck. Unless you have the chills, might feel nice, too. Sending you healthy vibes."
   },
   {
-    "input": "Pretty nice. Very anachronistic considering the setting, but that 's what makes it funny.",
+    "input": "Pretty nice. Very anachronistic considering the setting, but That's what makes it funny.",
     "output": "anachronistic how, if you do n't mind me asking? I sure hope it 's the parts I intentionally tried to make funny, haha"
   },
   {
@@ -5101,7 +4953,7 @@
   },
   {
     "input": "Thank you, now I will be able to sleep tonight",
-    "output": "That 's the only reason why I did it in the first place, to sleep."
+    "output": "That's the only reason why I did it in the first place, to sleep."
   },
   {
     "input": "how does the Roche limit not tear this thing apart?",
@@ -5112,7 +4964,7 @@
     "output": "Sure thing! I'll add you to my list and send out a PM once I'm done compiling information"
   },
   {
-    "input": "That 's Mr. Foreskin to you, son",
+    "input": "That's Mr. Foreskin to you, son",
     "output": "Sorry - Mister Foreskin is my dad!"
   },
   {
@@ -5217,14 +5069,14 @@
   },
   {
     "input": "How long until this gets taken down for copyright infringement?",
-    "output": "That 's what I'm wondering. These are n't exactly abandonware titles."
+    "output": "That's what I'm wondering. These are n't exactly abandonware titles."
   },
   {
     "input": "Thats a wild story. Hope you 're alright now buddy ",
     "output": "Yeah, was many, many years ago. All is well now. Thanks."
   },
   {
-    "input": "haha, that 's so weird. I'm over near the place beginning with F that rhymes with Boy",
+    "input": "haha, That's so weird. I'm over near the place beginning with F that rhymes with Boy",
     "output": "Hahaha I got you, I live where everyone goes on holiday with all them beaches. Begins with N"
   },
   {
@@ -5245,7 +5097,7 @@
   },
   {
     "input": "I fantasize about being a tiny wood nymph and running through his hair like a thicket.",
-    "output": "That 's such a brilliant comment. Great imagery."
+    "output": "That's such a brilliant comment. Great imagery."
   },
   {
     "input": "Looks like you got lucky with three out of the four spawning right on the boarder.",
@@ -5317,10 +5169,10 @@
   },
   {
     "input": "It 's like the ski and shoot event from the Olympics. Only way cooler.",
-    "output": "That 's how the biathlon came to be I believe."
+    "output": "That's how the biathlon came to be I believe."
   },
   {
-    "input": "Backwards, because I'm white. Credit Louis ck bc that 's all I can think of right now as an answer to your question.",
+    "input": "Backwards, because I'm white. Credit Louis ck bc That's all I can think of right now as an answer to your question.",
     "output": "I literally came here to say forward because I'm black and I was going to credit Louis CK"
   },
   {
@@ -5329,7 +5181,7 @@
   },
   {
     "input": "One day he 's going to just post a finished game. Right guys?... guys?",
-    "output": "Or a finished update. That changes hair colors or something. And that 's all it does."
+    "output": "Or a finished update. That changes hair colors or something. And That's all it does."
   },
   {
     "input": "We should have all seen this coming, we 're outshooting them.",
@@ -5420,7 +5272,7 @@
     "output": "Noticed it the day after launch, just after I finished the campaign..."
   },
   {
-    "input": "but that 's true, if he lost, he fucked up, i do n't see your point",
+    "input": "but That's true, if he lost, he fucked up, i do n't see your point",
     "output": "you are just angry because you are mad"
   },
   {
@@ -5513,7 +5365,7 @@
   },
   {
     "input": "I had two guesses on what that link would be. Glad to know I was right with one of them. XD",
-    "output": "And that 's why you 're a God."
+    "output": "And That's why you 're a God."
   },
   {
     "input": "Saudi Arabia is what you get when organizations like ISIS gain more power and international recognition plus trillions of dollars in oil revenue.",
@@ -5545,10 +5397,10 @@
   },
   {
     "input": "This guy most likely does n't even know PC gaming is a thing. Can he be called a peasant if he does n't know how superior PC is?",
-    "output": "That 's the whole reason they 're peasants."
+    "output": "That's the whole reason they 're peasants."
   },
   {
-    "input": "So THAT 'S why Seattle has higher unemployment than Detroit! Oh wait...",
+    "input": "So That'S why Seattle has higher unemployment than Detroit! Oh wait...",
     "output": "To be fair, I do n't think Detroit 's problems stem from low taxes."
   },
   {
@@ -5569,7 +5421,7 @@
   },
   {
     "input": "i like how most of those hits would be flagged in today 's game",
-    "output": "That 's why people say true hard hitting defenses are dead and gone."
+    "output": "That's why people say true hard hitting defenses are dead and gone."
   },
   {
     "input": "Ah, taking Old Testament laws out of context again are we?",
@@ -5585,7 +5437,7 @@
   },
   {
     "input": "I know, I'm trying. I've been hanging out with my group of friends and we 're reminiscing about all our memories.",
-    "output": "That 's the best way for him to live on ; through you!"
+    "output": "That's the best way for him to live on ; through you!"
   },
   {
     "input": "Cowboy Cerrone is the last of a dying breed.",
@@ -5857,7 +5709,7 @@
   },
   {
     "input": "LaunchPad is great for people who like extra steps to do simple things",
-    "output": "What do you do that 's so few extra steps?"
+    "output": "What do you do That's so few extra steps?"
   },
   {
     "input": "I like it, except it should be someone else because james was the subject of the social experiment last time.",
@@ -5869,7 +5721,7 @@
   },
   {
     "input": "You are one sexy beast! Had to fan myself looking at your pic!",
-    "output": "That 's the goal! Glad you enjoyed yourself!"
+    "output": "That's the goal! Glad you enjoyed yourself!"
   },
   {
     "input": "True, but conceptually, this is what he wants. Left outer with a null check would also do the trick.",
@@ -5892,7 +5744,7 @@
     "output": "Its like Satan, himself, is giving you the finger in the form of a pepper."
   },
   {
-    "input": "So can you cook it with anything? I guess that 's my question.",
+    "input": "So can you cook it with anything? I guess That's my question.",
     "output": "THC adheres to fat molecules. So, something with fat, which is why baked goods work so well."
   },
   {
@@ -5945,14 +5797,14 @@
   },
   {
     "input": "Man everything looks so difficult for the blazers on offense.",
-    "output": "That 's that hawks defense. Never thought I would get to say that."
+    "output": "That's that hawks defense. Never thought I would get to say that."
   },
   {
     "input": "I got a minor in possession which really served as a wakeup call. I've taken control of my life since then",
     "output": "I minored in witchcraft but majored in accounting."
   },
   {
-    "input": "That 's pretty much true. Guess I'll try it as soon as I get my juice. Would be lovely if Aspire release a full cotton coil.",
+    "input": "That's pretty much true. Guess I'll try it as soon as I get my juice. Would be lovely if Aspire release a full cotton coil.",
     "output": "the only issue is the the micro silica press paper that is on the inside of the coil. imo use the tank and rewrap with cotton and vape on bro"
   },
   {
@@ -6029,7 +5881,7 @@
   },
   {
     "input": "Oh, well that sucks. Sorry you got scammed.",
-    "output": "Well, I got scammed by Sprint also. But that 's another story..."
+    "output": "Well, I got scammed by Sprint also. But That's another story..."
   },
   {
     "input": "Somebody gfycat that crazy K butter heave hook thingy.",
@@ -6081,7 +5933,7 @@
   },
   {
     "input": "Yes? There 's hundreds of exceptions. Go look at Timmy",
-    "output": "Any exception that 's a guard or small forward?"
+    "output": "Any exception That's a guard or small forward?"
   },
   {
     "input": "Do n't kill other people ; they are not yours to kill.",
@@ -6173,7 +6025,7 @@
   },
   {
     "input": "I'd explain, but I do n't want to enable you by pointing towards cheaper smokes.",
-    "output": "We do n't have cheap smokes in the UK, that 's one of the reasons I'm aiming to quit"
+    "output": "We do n't have cheap smokes in the UK, That's one of the reasons I'm aiming to quit"
   },
   {
     "input": "First thought is rupees from zelda games.",
@@ -6189,7 +6041,7 @@
   },
   {
     "input": "Right. Only Jay 's lack of total recall is inexcusable. Gotcha. Loud and clear.",
-    "output": "wha...? did I say anything about Jay? I DID? oh... hmm... seems you 're seeing something that 's not there..."
+    "output": "wha...? did I say anything about Jay? I DID? oh... hmm... seems you 're seeing something That's not there..."
   },
   {
     "input": "Well, I consider adding new bugs to cancel out any fixes, so the game 's state of instability lies at an equilibrium.",
@@ -6216,7 +6068,7 @@
     "output": "I mean it 's probably somewhat embarrassing and shameful but I'm not really sure what makes it disgusting or why you are so angry about it."
   },
   {
-    "input": "This is the same thing that 's happening with silver, prices go down, demand goes up, huge volumes today.",
+    "input": "This is the same thing That's happening with silver, prices go down, demand goes up, huge volumes today.",
     "output": "Up or down it remains to be seen."
   },
   {
@@ -6225,7 +6077,7 @@
   },
   {
     "input": "I'm ocd and all your wires are driving me insane.",
-    "output": "Seriously I think that 's a fire hazard or something"
+    "output": "Seriously I think That's a fire hazard or something"
   },
   {
     "input": "Your definition of a huge fan is pretty funky",
@@ -6273,7 +6125,7 @@
   },
   {
     "input": "is it a fruit and veg shop?",
-    "output": "Well, the Apples are potatoes. No, that 's insulting game consoles. Sorry"
+    "output": "Well, the Apples are potatoes. No, That's insulting game consoles. Sorry"
   },
   {
     "input": "You mean just like every other country?",
@@ -6285,7 +6137,7 @@
   },
   {
     "input": "South Park Bigger, Longer, and Uncut",
-    "output": "That 's it. Thanks so much!"
+    "output": "That's it. Thanks so much!"
   },
   {
     "input": "Wade, Bosh, Deng, maybe McBob and Granger. Everyone else needs to be gone",
@@ -6541,7 +6393,7 @@
   },
   {
     "input": "I have the pills with powder inside. You 're saying I should open the pills and drop the powder into my tongue?",
-    "output": "Could be worth a try. I bought a tub of pure powder. That 's how I take mine."
+    "output": "Could be worth a try. I bought a tub of pure powder. That's how I take mine."
   },
   {
     "input": "Diesel is flammable. It 's just not as explosive. I grew up on a farm in nebraska lol",
@@ -6613,7 +6465,7 @@
   },
   {
     "input": "oh I see. that type of cross faction play. I have seen that in Plano.",
-    "output": "I did n't know this was a thing in DFW, but that explains some stuff that 's happened around here."
+    "output": "I did n't know this was a thing in DFW, but that explains some stuff That's happened around here."
   },
   {
     "input": "hmm it 'll be interesting to see where Gerrard fits into our starting XI",
@@ -6640,7 +6492,7 @@
     "output": "That is a brutal way to start the challenge. Good luck to you."
   },
   {
-    "input": "Wow that 's really long! Cool though.",
+    "input": "Wow That's really long! Cool though.",
     "output": "Could be the same as you though. It is a hard angle to show it from. Also I was hard so that makes a diffrence"
   },
   {
@@ -6712,7 +6564,7 @@
     "output": "She went nuts! Growling at the tv hahaha"
   },
   {
-    "input": "For your mage deck, is a second Mountain Giant an acceptable replacement for Alex? That 's the only card I'm currently missing.",
+    "input": "For your mage deck, is a second Mountain Giant an acceptable replacement for Alex? That's the only card I'm currently missing.",
     "output": "Pretty sure she 's hard to replace, you want to use her after your Giants come out."
   },
   {
@@ -6733,7 +6585,7 @@
   },
   {
     "input": "Added the xml file and still wont work",
-    "output": "Sorry mate, but you 've done something wrong then. That 's how it 's done. Attach your file if you like and I'll take a look"
+    "output": "Sorry mate, but you 've done something wrong then. That's how it 's done. Attach your file if you like and I'll take a look"
   },
   {
     "input": "Baby oil by FAR, dissolves anything and everything I can throw at it in mere seconds with quite minimal effort.",
@@ -6821,11 +6673,11 @@
   },
   {
     "input": "Fantastic, I think you 've sold me on this game.",
-    "output": "That 's the best thing I could expect from this trip - welcome aboard, hope you enjoy the view!"
+    "output": "That's the best thing I could expect from this trip - welcome aboard, hope you enjoy the view!"
   },
   {
     "input": "Maybe they 're a woman 's pant? They look great though.",
-    "output": "That 's a possibility I had n't thought of! Thank you, too."
+    "output": "That's a possibility I had n't thought of! Thank you, too."
   },
   {
     "input": "So... basically everything in my original post was right. Thanks.",
@@ -6840,7 +6692,7 @@
     "output": "Thank you so much! I'm definitely saving these responses for a rainy day, especially when I do n't feel motivated. You all make a difference!"
   },
   {
-    "input": "Holy crap, that 's excellently done. So video goes through a wire from the camera, and there 's an IR shutter release?",
+    "input": "Holy crap, That's excellently done. So video goes through a wire from the camera, and there 's an IR shutter release?",
     "output": "Yeah exactly. I was looking into wireless HDMI transmitters, but they cost more than this whole project combined."
   },
   {
@@ -6868,8 +6720,8 @@
     "output": "They only handled his recent recovery in the US you knob"
   },
   {
-    "input": "it is and maybe you were right in saying that 's the reason they were omitted from the playoffs.",
-    "output": "Who knows? I would have liked to see TCU in, that 's for sure."
+    "input": "it is and maybe you were right in saying That's the reason they were omitted from the playoffs.",
+    "output": "Who knows? I would have liked to see TCU in, That's for sure."
   },
   {
     "input": "that makes sense but what is the sword?",
@@ -6885,7 +6737,7 @@
   },
   {
     "input": "Im pretty sure I've played here on Call of Duty.",
-    "output": "That 's exactly what I thought. Looks like a loading screen."
+    "output": "That's exactly what I thought. Looks like a loading screen."
   },
   {
     "input": "Jesus... I completely forgot about this pill effect.",
@@ -6897,7 +6749,7 @@
   },
   {
     "input": "I admire her enthusiasm. If not her disregard for expensive crystal bowls.",
-    "output": "Except that 's clearly a cheap plastic bowl."
+    "output": "Except That's clearly a cheap plastic bowl."
   },
   {
     "input": "Have n't you seen the episode of Game Theory? Humans ARE Pokemon!",
@@ -7040,8 +6892,8 @@
     "output": "TB mentions it was under popular new releases, so its not his doing. Thats how he found it."
   },
   {
-    "input": "Damn, I really hope Eren does n't die. If he does, it 'll be a two page spread that 'll bring me to tears.",
-    "output": "I ca n't imagine he 'll die with an entire third of the story left to go. If Isayama kills him off that 'll happen at the very end."
+    "input": "Damn, I really hope Eren does n't die. If he does, it 'll be a two page spread That'll bring me to tears.",
+    "output": "I ca n't imagine he 'll die with an entire third of the story left to go. If Isayama kills him off That'll happen at the very end."
   },
   {
     "input": "can you get like a random warped vhs sound out of that pedal? none of the demos seem to answer that",
@@ -7080,7 +6932,7 @@
     "output": "A Couple weeks of going out and practicing"
   },
   {
-    "input": "I do n't think that 's the end of sensei and while I'm on team Rui, I'm starting to like sensei as well.",
+    "input": "I do n't think That's the end of sensei and while I'm on team Rui, I'm starting to like sensei as well.",
     "output": "dont man. dont stray from the right path. turn back before its too late."
   },
   {
@@ -7145,7 +6997,7 @@
   },
   {
     "input": "She 's gotten some real shit over the past few months, yeah.",
-    "output": "Thanks then, that 's all I need to know"
+    "output": "Thanks then, That's all I need to know"
   },
   {
     "input": "You 're fighting the good fight in this thread, bud. Do n't give up!",
@@ -7229,7 +7081,7 @@
   },
   {
     "input": "Wood floors? Do you like flutter echo?",
-    "output": "That 's why a good portion of the floor is covered with a rug, as well as the acoustic panels on the ceiling and walls to mitigate the effect"
+    "output": "That's why a good portion of the floor is covered with a rug, as well as the acoustic panels on the ceiling and walls to mitigate the effect"
   },
   {
     "input": "Can you pull any EXIF data from the photos?",
@@ -7241,7 +7093,7 @@
   },
   {
     "input": "It it not better it is cheaper and the same. It is far cheaper to melt it down then dig it up.",
-    "output": "I'm a dumbass. That 's far simpler than what I was trying to assume. Thanks."
+    "output": "I'm a dumbass. That's far simpler than what I was trying to assume. Thanks."
   },
   {
     "input": "his mediocre wrestling ability and his awkwardness on the mic. thank god the WWE fired him when he was on the roster",
@@ -7344,7 +7196,7 @@
     "output": "I hope you are correct that sounds perfect."
   },
   {
-    "input": "That 's a beautiful ginger bush. She is very hot",
+    "input": "That's a beautiful ginger bush. She is very hot",
     "output": "Thanks! She 's usually shaved but I love when she has a little bit of a ginger bush!"
   },
   {
@@ -7373,7 +7225,7 @@
   },
   {
     "input": "i think she 's actually brunette. and taking a guess august ames",
-    "output": "Nah, that 's not August, her nips are much lighter."
+    "output": "Nah, That's not August, her nips are much lighter."
   },
   {
     "input": "There 's nothing to point out what I'm supposed to laugh at. HOW DO I KNOW WHAT TO LAUGH AT?!",
@@ -7453,7 +7305,7 @@
   },
   {
     "input": "By the way if you go to the Network menu, you get all the PvP and event chips! Hooray for no PvP compensation!",
-    "output": "Wait, are you serious? That 's awesome!"
+    "output": "Wait, are you serious? That's awesome!"
   },
   {
     "input": "I have a powersaves, so I have numerous duplicates of all items. And I can clone a full box of Pokemon on command.",
@@ -7477,7 +7329,7 @@
   },
   {
     "input": "You should probably see a doctor about that.",
-    "output": "That 's only necessary if the beam lasts longer than four hours."
+    "output": "That's only necessary if the beam lasts longer than four hours."
   },
   {
     "input": "I just got the Cadence Raw Denims for Christmas and they are very comfortable to ride in. They stretch nicely and feel great to wear.",
@@ -7497,7 +7349,7 @@
   },
   {
     "input": "You should start uploading videos with that kind of connection.",
-    "output": "That 's just about all I can do with my connection."
+    "output": "That's just about all I can do with my connection."
   },
   {
     "input": "They do represent Christians. The wrong kind of Christians.",
@@ -7512,7 +7364,7 @@
     "output": "EXACTLY. Its existance is a paradox."
   },
   {
-    "input": "That 's an odd coincidence. What did your grandmother say about him?",
+    "input": "That's an odd coincidence. What did your grandmother say about him?",
     "output": "I never met her -- she died in a truck accident when my dad was like eleven."
   },
   {
@@ -7541,7 +7393,7 @@
   },
   {
     "input": "Ooohh I see it now, I was looking at the holes trying to find the image haha",
-    "output": "Same! I was like, okay, so he 's practicing making shapes, that 's cool -- and then I saw it."
+    "output": "Same! I was like, okay, so he 's practicing making shapes, That's cool -- and then I saw it."
   },
   {
     "input": "Oh look another person who complains at change. Take your shit attitude back to OSRS.",
@@ -7573,7 +7425,7 @@
   },
   {
     "input": "I Do n't know how it is in the UK, but in the US if you get caught plagiarizing, it 's grounds for expulsion.",
-    "output": "Thank you, I could imagine. I hope that 's not the case."
+    "output": "Thank you, I could imagine. I hope That's not the case."
   },
   {
     "input": "Why could n't these guys have been the new Nation of Domination?",
@@ -7632,7 +7484,7 @@
     "output": "imperfect recall. This happened a year ago, and he had n't seen the ad since, excluding the week or so that the ad was on."
   },
   {
-    "input": "That 's commie talk. Get a better job",
+    "input": "That's commie talk. Get a better job",
     "output": "The streets are paved with gold here in the US, and jobs grow on trees"
   },
   {
@@ -7761,7 +7613,7 @@
   },
   {
     "input": "Would n't know. Ask Hayden. Apparently she had a major thing for him after seeing him perform live as a professional comedian!",
-    "output": "lol, hayden 's a professional doorman that 's it"
+    "output": "lol, hayden 's a professional doorman That's it"
   },
   {
     "input": "It 's amazing it would be nice if you could put that on the workshop, it seems a lot less jagged which is why I hate the default borders.",
@@ -7817,7 +7669,7 @@
   },
   {
     "input": "Sorry, why are you silencing the molten? Are you assuming it has taunt?",
-    "output": "given that handlock does n't play anything else that makes a molten worth silencing... I'd guess that 's what he meant."
+    "output": "given that handlock does n't play anything else that makes a molten worth silencing... I'd guess That's what he meant."
   },
   {
     "input": "Cuff is a tiny bit high but the fit looks pretty good I like the speckled socks",

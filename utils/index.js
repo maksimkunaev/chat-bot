@@ -21,6 +21,8 @@ function  createDefaultTable(data, net) {
 
 function decodeAnswer(output) {
 	let answer = output.split('0.').slice(1).map(num => Number(`0.${num}`))
+	console.log(`output 22`, output)
+	console.log(`answer 22`, answer)
 
 	answer = serializer.decode(answer)
 	return  answer;

@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tensorflow/tfjs": "^1.2.5",
+    "@tensorflow/tfjs-node": "^1.2.5",
+    "@tensorflow/tfjs-node-gpu": "^1.2.5",
     "brain.js": "^1.6.1",
     "command-line-usage": "^6.0.2",
     "express": "^4.17.1",
