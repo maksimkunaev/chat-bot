@@ -27,16 +27,18 @@
       netConfig.hiddenLayers = hiddenLayers;
     }
 
+    const start = 236;
+
     const settings = {
         config: {
         name,
-          from: 0,
-          to: Number(data),
+          from: start,
+          to: start + Number(data),
         },
         net: netConfig,
         training: {
           iterations: Number(iterations),
-          errorThresh: 0.0110,
+          errorThresh: 0.0105,
       }
     }
 
