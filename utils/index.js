@@ -58,13 +58,17 @@ function createSVG(data) {
 				.text { font: italic 10px sans-serif; fill: #756f6f; }
 			</style>
 			<path d="M 0 0 ${path}" stroke-width="1px" stroke="#63e72c" fill="transparent"/>
-			<text x="3%" y="${y * 0.8}" class="text">${min.toFixed(3)}</text>
+			<text x="3%" y="${y * 0.8}" class="text">${min.toFixed(4)}</text>
 			<line x1="0" y1="${minPoint}" x2="100%" y2="${minPoint}" stroke="rgba(117, 111, 111, 0.5)" />
 		</svg>`;
 }
 
 function getError(details) {
-	return details.match(/error: \d+.\w+/g).map(elem => Number(elem.replace('error: ', '')))[0];
+	let error = details.match(/error: \d+.\w+/g) || [];
+
+	error = error.map(elem => Number(elem.replace('error: ', '')))[0];
+
+	return error || 5;
 }
 
 function saveNet(config) {

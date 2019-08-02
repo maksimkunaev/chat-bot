@@ -10,7 +10,7 @@
   });
 
   socket.on('message', function(data){
-    addMessageToDialog(data, 'bot')
+    addMessageToDialog(data, 'Bot')
   });
   socket.emit('init');
 
@@ -27,7 +27,7 @@
       netConfig.hiddenLayers = hiddenLayers;
     }
 
-    const start = 236;
+    const start = 0;
 
     const settings = {
         config: {
@@ -38,7 +38,7 @@
         net: netConfig,
         training: {
           iterations: Number(iterations),
-          errorThresh: 0.0105,
+          errorThresh: 0.0110,
       }
     }
 
@@ -178,7 +178,7 @@ function sendMessage(event) {
     message: textInput.value,
     netName: currentNet.name
   })
-  addMessageToDialog({output: textInput.value, netName: currentNet.name}, 'human')
+  addMessageToDialog({output: textInput.value, netName: currentNet.name}, 'You')
   return false;
 }
 
@@ -222,8 +222,8 @@ function renderDialog(netName) {
   const dialogList = dialogs.find(dialog => dialog.name === netName) || [];
   const dialogElem = document.querySelector('.dialog');
 
-  const messagesContent = dialogList.data.map(({message}) => {
-    return `<li>${message}</li>`
+  const messagesContent = dialogList.data.map(({message, sentBy}) => {
+    return `<li>${sentBy}: ${message}</li>`
   }) 
 
   dialogElem.innerHTML = messagesContent.join('');  

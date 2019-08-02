@@ -74,6 +74,7 @@ function startWs() {
 	    socket.on('message', ({message, netName}) => {
 		    const net = netsDataSaved.find(net => net.name === netName)
 		    const output = neural.run(message, net);
+		    console.log(`net`,net)
 		    socket.emit('message', { output, netName })
 		})
 
@@ -84,8 +85,8 @@ function startWs() {
 }
 
 (async function () {
-	http.listen(8080, () => {
-		console.log('listening on *:8080');
+	http.listen(8081, () => {
+		console.log('listening on *:8081');
 	});
 	
 	startWs();
