@@ -38,7 +38,7 @@
         net: netConfig,
         training: {
           iterations: Number(iterations),
-          errorThresh: 0.0119,
+          errorThresh: 0.0113,
       }
     }
 

@@ -9,11 +9,12 @@ const neural = require('./neural/neural');
 const HOST = 'http://localhost';
 const PORT = 8080;
 const HOSTNAME = `${HOST}:${PORT}`;
+const path = require('path');
 
 const netName = 'v_9_9_4';
 const net = {
   name: netName,
-  netPath: `/Users/maxim/private/chat-bot/nets/${netName}/${netName}.net.json`
+  netPath: path.join(__dirname, `nets/${netName}/${netName}.net.json`),
 };
 
 const socket = io.connect(`${HOSTNAME}`, {
