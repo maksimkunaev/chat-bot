@@ -7,10 +7,9 @@ const password = 'Bot';
 const io = require('socket.io-client');
 const neural = require('./neural/neural');
 const HOST = 'http://localhost';
-const PORT = 8080;
-const HOSTNAME = `${HOST}:${PORT}`;
+const HOSTNAME = `${HOST}:${process.env.CHAT_PORT || 8080}`;
 const path = require('path');
-
+console.log("HOSTNAME",HOSTNAME)
 const netName = 'v_9_9_4';
 const net = {
   name: netName,
@@ -22,12 +21,39 @@ const socket = io.connect(`${HOSTNAME}`, {
     	Authorization: `Bearer ${authKey}`,
   	}
 });
-    
+let timerId;
+
 function ws() {
 	socket.emit('init');
 	socket.on('connect', function (arg) {
 		console.log(`connect`,arg)
-	}); 
+		clearInterval(timerId)
+		if (!arg) {
+			socket.connect();
+			// timerId = setInterval(wsConnect, 3000)
+		}
+	});
+
+	socket.on('connection', function (arg) {
+		console.log(`connection`,arg)
+		clearInterval(timerId)
+		if (!arg) {
+			socket.connect();
+			// timerId = setInterval(wsConnect, 3000)
+		}
+	});
+
+	function wsConnect() {
+		// console.log('connection')
+		socket.connect();
+	}
+
+	socket.on('disconnect', function (reason) {
+		console.log(`disconnect`, reason);
+		// ws()
+
+		timerId = setInterval(wsConnect, 3000)
+	});
 
 	socket.on('newMessage', async (msg) => {
 	const { text, dialogId, sentTo, sentBy } = msg;
