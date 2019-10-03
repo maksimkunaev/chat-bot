@@ -5,7 +5,8 @@
   "main": "run.js",
   "scripts": {
     "prod": "CHAT_PORT=80 node --max_old_space_size=2048 chat-bot-service.js",
-    "dev": "CHAT_PORT=8080 node --max_old_space_size=2048 chat-bot-service.js"
+    "dev": "CHAT_PORT=8080 node --max_old_space_size=2048 chat-bot-service.js",
+    "pm2:prod": "NODE_PORT=80 pm2 start chat-bot-service.js -- --max_old_space_size=2048"
   },
   "author": "",
   "license": "ISC",
